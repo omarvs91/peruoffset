@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<!-- Mirrored from peruoffset.pe/nosotros.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Sep 2023 15:57:13 GMT -->
+<head>
+       <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3GW5BER3V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3GW5BER3V');
+</script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Peru Offset Digital S.A.C</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/icon" href="assets/imges/favicon.html"/>
+        <!-- Font Awesome -->
+        <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/font.css" rel="stylesheet">
+        <!-- Line icon -->
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Slick slider -->
+        <link href="assets/css/slick.css" rel="stylesheet">
+        <!-- Gallery Lightbox -->
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <!-- Theme color -->
+        <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+        <!-- Main Style -->
+        <link href="style.css" rel="stylesheet">
+        
+
+        <link href="assets/css/servicios.css" rel="stylesheet">
+
+        <!-- Fonts -->
+
+        <!-- Open Sans for body font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+        <!-- Montserrat for Title -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+        <link href="main.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Start Slader Clientes -->
+        <!-- link wsp y coptiza -->
+        <link href="assets/css/flotante.css" rel="stylesheet">
+        <link rel='stylesheet' id='jquery.contactus.css-css'  href='assets/css/jquery.contactus.min97e9.css?ver=1.7.9' type='text/css' media='all' />
+        <script src="assets/js/jquery.min1.js"></script>
+        <script type='text/javascript' src='assets/js/jquerywsp.js'></script>
+        <script type='text/javascript' src='assets/js/scriptswsp97e9.js?ver=1.7.9'></script>
+        <!-- end link wsp y coptiza-->
+        <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.customer-logos').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                            breakpoint: 1,
+                            settings: {
+                                slidesToShow: 4
+                            }
+                        }, {
+                            breakpoint: 520,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }]
+                });
+
+                //$("#data-packing").addClass('active');
+                setTimeout(quitar_filtro_packing, 1000);
+                setTimeout(cargar_filtrotodos, 1000);
+            });
+            function quitar_filtro_packing() {
+                $("#data-packing").removeClass('active');
+            }
+            function cargar_filtrotodos() {
+                $("#data-todos").addClass('active');
+                $('.filtr-container').filterizr();
+            }
+
+        </script>
+        <!-- End Slader Clientes -->
+
+
+
+    </head>
+    <body>
+        <!--<a href="contacto.html" class="float1">
+            <i><img class="boton4" src="assets/images/cotiza.png"></i>
+        </a>-->
+<div id="arcontactus"></div>
+        <script src="assets/js/jquery.contactus.mine606.js?version=1.7.9"></script>
+        <script type="text/javascript">
+            var zaloWidgetInterval;
+            var tawkToInterval;
+            var skypeWidgetInterval;
+            var lcpWidgetInterval;
+            var closePopupTimeout;
+            var lzWidgetInterval;
+            var arcuOptions;
+            var arCuMessages = ["\u00a1Hola!", "\u00bfTienes alguna pregunta?", "Por favor use este bot\u00f3n<br \/>\n\u00a1para contáctarnos!"];
+            var arCuLoop = false;
+            ;
+            var arCuCloseLastMessage = false;
+            var arCuPromptClosed = false;
+            var _arCuTimeOut = null;
+            var arCuDelayFirst = 2000;
+            var arCuTypingTime = 2000;
+            var arCuMessageTime = 4000;
+            var arCuClosedCookie = 0;
+            var arcItems = [];
+            window.addEventListener('load', function () {
+                jQuery('#arcontactus').remove();
+                var $arcuWidget = jQuery('<div>', {
+                    id: 'arcontactus'
+                });
+                jQuery('body').append($arcuWidget);
+                arCuClosedCookie = arCuGetCookie('arcu-closed');
+                jQuery('#arcontactus').on('arcontactus.init', function () {
+                    if (arCuClosedCookie) {
+                        return false;
+                    }
+                    arCuShowMessages();
+                });
+                jQuery('#arcontactus').on('arcontactus.closeMenu', function () {
+                    arCuCreateCookie('arcumenu-closed', 1, 1);
+                });
+                jQuery('#arcontactus').on('arcontactus.openMenu', function () {
+                    clearTimeout(_arCuTimeOut);
+                    if (!arCuPromptClosed) {
+                        arCuPromptClosed = true;
+                        jQuery('#arcontactus').contactUs('hidePrompt');
+                    }
+                });
+                jQuery('#arcontactus').on('arcontactus.openCallbackPopup', function () {
+                    clearTimeout(_arCuTimeOut);
+                    if (!arCuPromptClosed) {
+                        arCuPromptClosed = true;
+                        jQuery('#arcontactus').contactUs('hidePrompt');
+                    }
+                });
+
+                jQuery('#arcontactus').on('arcontactus.hidePrompt', function () {
+                    clearTimeout(_arCuTimeOut);
+                    if (arCuClosedCookie != "1") {
+                        arCuClosedCookie = "1";
+                        arCuPromptClosed = true;
+                        arCuCreateCookie('arcu-closed', 1, 0);
+                    }
+                });
+               var arcItem = {};
+                arcItem.id = 'msg-item-2';
+                arcItem.class = 'msg-item-whatsapp';
+                arcItem.title = "WhatsApp";
+                arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>';
+                arcItem.href = 'https://wa.link/25z9uq';
+                arcItem.color = '#00BB2D';
+                arcItems.push(arcItem);
+
+        
+
+                  var arcItem = {};
+                 arcItem.id = 'msg-item-1';
+                 arcItem.class = 'msg-item-facebook-messenger';
+                 arcItem.title = "Messenger";
+                 arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>';
+                 arcItem.href = '#';
+                 arcItem.color = '#567AFF';
+                 arcItems.push(arcItem);
+				
+              /*  var arcItem = {};
+                 arcItem.id = 'msg-item-1';
+                 arcItem.class = 'msg-item-facebook-messenger';
+                 arcItem.title = "Messenger";
+                 arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>';
+                 arcItem.href = '#';
+                 arcItem.color = '#567AFF';
+                 arcItems.push(arcItem);
+               var arcItem = {};
+                arcItem.id = 'msg-item-9';
+                arcItem.class = 'msg-item-phone';
+                arcItem.title = "Nosotros te llamamos!";
+                arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>';
+                arcItem.href = 'callback';
+                arcItem.color = '#FF0000';
+                arcItems.push(arcItem);*/
+                arcuOptions = {
+                    wordpressPluginVersion: '1.7.9',
+                    buttonIcon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>',
+                    drag: false,
+                    mode: 'regular',
+                    buttonIconUrl: 'assets/fonts/msg.svg',
+                    showMenuHeader: false,
+                    menuHeaderText: "How would you like to contact us?",
+                    showHeaderCloseBtn: false,
+                    headerCloseBtnBgColor: '#008749',
+                    headerCloseBtnColor: '#ffffff',
+                    itemsIconType: 'rounded',
+                    align: 'right',
+                    reCaptcha: false,
+                    reCaptchaKey: '',
+                    countdown: 0,
+                    theme: '#00bb2d',
+                    buttonText: "Chat",
+                    buttonSize: 'medium',
+                    menuSize: 'large',
+                    phonePlaceholder: '+XXX-XX-XXX-XX-XX',
+                    callbackSubmitText: 'Solicitar llamada',
+                    errorMessage: 'Error de conexión. Actualice la página e intente nuevamente.',
+                    callProcessText: 'Te estamos llamando al telefono',
+                    callSuccessText: 'Gracias.<br />Le devolveremos la llamada pronto.',
+                    iconsAnimationSpeed: 600,
+                    iconsAnimationPause: 2000,
+                    callbackFormText: 'Por favor, introduzca su número de teléfono<br />y te llamamos pronto',
+                    items: arcItems,
+                    ajaxUrl: '#',
+                    promptPosition: 'top',
+                    callbackFormFields: {
+                        phone: {
+                            name: 'phone',
+                            enabled: true,
+                            required: true,
+                            type: 'tel',
+                            label: '',
+                            placeholder: "+XX-XXX-XXX-XXX"
+                        },
+                    },
+                    action: 'arcontactus_request_callback'
+                };
+                jQuery('#arcontactus').contactUs(arcuOptions);
+            });
+        </script>
+        <!-- Start Header -->
+        <header id="mu-header" class="" role="banner">
+            <div class="container">
+                <nav class="navbar navbar-default mu-navbar">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <!-- Text Logo -->
+                            <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" title="Peru Offset Digital S.A.C"></a>
+
+                            <!-- Image Logo -->
+                            <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav mu-menu /*navbar-right*/" >
+                                <li><a href="nosotros.html" id="nosotros" class="menu_activo">NOSOTROS</a></li>
+                                <li><a href="productos.html">PRODUCTOS</a></li>
+                                <li><a href="agroindustria.html">SECTORES</a></li>
+                                <li><a href="contacto.html">CONTÁCTANOS</a></li>
+                            </ul>
+                             <nav class="nav social-nav /*pull-right*/ d-none d-lg-inline" style="margin-top: 16px;float:right; text-align: justify-all;margin-right:15px;">
+                               	
+								 <a href="#"><span class="llamanos">LLÁMANOS</span><br><span class="llamanos-numero">332-1006</span></a>
+                               </nav>
+                       <nav class="nav social-nav /*pull-right*/ d-none d-lg-inline" style="margin-top: 16px;"><a href="https://www.facebook.com/peruoffset.digital" target="_blank"><img src="assets/images/iconos/facebook.png"></a> <a href="https://www.instagram.com/peruoffset_digital/" target="_blank"><img src="assets/images/iconos/instagram.png"></a> <a href="https://www.linkedin.com/company/peruoffsetdigital" target="_blank"><img src="assets/images/iconos/linkedin.png"></a></nav>
+                            
+                              
+                               
+                               
+							
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Featured Slider -->
+
+        <section id="mu-featured-slider">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-featured-slider">
+
+                        <!-- Start Single slide 
+
+
+                        <div class="parallax">
+
+                            <div class="water water-layer5" style="left: 60px;top: 1.70312px;"></div>
+                            <div class="water water-layer3"></div>
+                            <div class="water water-layer4"></div>
+                        </div>-->
+                        <img src="assets/images/bgnosotros.jpg">	
+
+
+
+
+                    </div>
+                </div>			
+            </div>
+        </section>
+        <section id="mu-about">
+            
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+							<h2></h2>
+                      <div>
+                   <div class="barra1"> </div>
+<div class="barra2"> </div>
+<div class="peru"> </div>
+                </div>
+
+                                <div class="mu-about-header">
+                                
+									 <div class="mu-about-header peruoffset-texto">
+                                          <br><p style="padding: 23px;font-size: 34px; font-weight: bold;letter-spacing: 5.5px;">“SÓLIDO COMPROMISO <br>DE CUMPLIMIENTO” </p>
+                                          <p><br>
+											  <b>PERÚ OFFSET</b> es una empresa sólida con el corazón 100% peruano. Nos respalda una experiencia de 33 años en la industria gráfica, más de un cuarto de siglo cumpliendo con nuestros clientes e incentivando entre nuestroscolaboradores la eficiencia, creatividad, competitividad y excelencia en el sector gráfico nacional.</p><br>
+
+<p>Para nosotros el principal objetivo es generar valor a tu empresa, por eso te ofrecemos soluciones rentables, productivas y competitivas. Para lograrlo contamos con un staff profesional de primer nivel, capaz de enfrentar nuevos retos y de marcar la pauta de la industria gráfica del siglo XXI. Toda una trayectoria de excelencia en nuestro trabajo y de compromiso con nuestros clientes que ha sido premiada por la World Confederation of Bussinesses con el “Premio a la excelencia Empresarial 2010”.</p>
+<br>
+                                </div>
+
+                                <!-- Start About Us Content -->
+
+                                <!-- End About Us Content -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Featured Slider -->
+
+        <!-- Start main content -->
+
+        <main role="main">
+
+            <section id="mu-service">
+
+                <div class="row">
+
+                   
+                   
+                    <div style="height:1065px;">
+                       
+                    
+                       
+                        <video autoplay loop controls pause>
+                            <source src="assets/videos/video_pod.mp4" type="video/mp4" />
+                        </video>
+                 
+                        
+                    </div></div>
+         
+            </section>
+            <!-- Start About -->
+            <section id="mu-politicas">
+                <div class="container">
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-12">
+                            <div class="mu-about-area">
+
+                                <div class="mu-about-header">
+                                    <h2 class="mu-heading-title" style="color:#fff"><img src="assets/images/icono-politica.png"><br>
+                                        POLÍTICA INTEGRADA</h2>
+                                    <span style="color:#fff; text-align: justify;" class="peruoffset-texto"> <p><br>
+										En <b>PERÚ OFFSET DIGITAL S.A.C </b>nos enfocamos en ofrecer a nuestros clientes, productos y soluciones gráficas de calidad con el máximo nivel de compromiso de seguridad alimentaria. Con la finalidad de satisfacer a nuestros clientes, ofrecerlos productos seguros y cumplen con los requisitos legales, para ello, establece un sistema integrado de gestión basado en la Norma ISO 9001:2015 y la Norma BRC para materiales de envasado y definida esta política, cuyos principios son los siguientes:</p>
+
+<br>
+                                        <p>✓ Planificar y realizar productos y servicios con altos estándares de calidad, con el objetivo de satisfacer constantemente a nuestros clientes y otras partes interesadas.</p><br>
+
+                                        <p>✓ Cumplir con la legislación vigente, además de todos los compromisos voluntariamente contraídos en materia de calidad y seguridad Alimentaria.</p><br>
+
+                                        <p>✓ La calidad y la seguridad alimentaria es una característica fundamental de nuestros productos. Es por ello que la formación, la adaptación a los tiempos y la adopción de nuevas tecnologías es una constante en nuestro día a día.</p><br>
+                                        
+                                        <p>✓ Compromiso de promover una comprensión y difusión de nuestra política de calidad dentro de la organización, mediante la formación y comunicación continúa a nuestros trabajadores, clientes y proveedores.</p><br>
+                                        
+                                         <p>✓ Mejorar continuamente la gestión y el desempeño de la calidad y seguridad alimentaria.</p>
+                                         <br>
+                                         <p style="text-align: right;">Lima, 01 de Octubre del 2022</p></span>
+
+                                </div>
+
+                                <!-- Start About Us Content -->
+
+                                <!-- End About Us Content -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End About -->
+
+
+
+            <!-- End Testimonials -->
+            <section id="mu-about">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-about-area">
+
+                                <div class="mu-about-header">
+
+                                    <h2 class="mu-heading-title" style="text-align: center; color: #e22319"><img src="assets/images/iconos/logo-nosotros.png">&nbsp;MISIÓN</h2>
+                                    <p style="text-align: justify" class="peruoffset-texto"><br>
+										Ser aliado estratégico en el desarrollo de proyectos de nuestros clientes, aportando conceptos innovadores en la línea gráfica,funcionales, y económicos, con un servicio de excelencia, uso de alta tecnología, mejora continua, compromiso de un equipo humano altamente calificado, cuidando el medio ambiente y cumpliendo la legislación vigente.</p>
+
+                                </div>
+                                <div class="mu-about-header">
+ <div style="text-align: center"><p>&nbsp;</p></div>
+                     <div style="text-align: center"><p>&nbsp;</p></div>
+                                    <h2 class="mu-heading-title" style="text-align: center; color: #e22319"><img src="assets/images/iconos/logo-nosotros.png">&nbsp;VISIÓN</h2>
+                                    <p style="text-align: justify" class="peruoffset-texto"><br>
+										Al 2024 ser una empresa modelo en la fabricación de productos packaging a la vanguardia de la tecnología, con altos estándares internacionales de calidad, brindando soluciones innovadoras e incrementando la capacidad de planta para satisfacer a todos los sectores industriales.
+                                    </p>
+                                    <p style="text-align: justify" class="peruoffset-texto">
+                                        Al 2027 la empresa se expandirá a nivel nacional e internacional para atender a nuevos clientes de la región, logrando su posicionamiento estratégico.</p>
+
+                                </div>
+                                <!-- Start About Us Content -->
+
+                                <!-- End About Us Content -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Start Clients -->
+            <section id="mu-counter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-counter-area">
+                                <h2><span class="boton_sectores boton_sectores1">Nuestros Valores</span></h2>
+                                <h2 class="mu-heading-title"><br></h2>
+                                <div class="mu-counter-block">
+                                    <div class="row"><!-- Start Single Counter -->
+                                        <div class="col-sm-3">
+                                            <div class="mu-single-counter">
+                                                <span class="buttonCircular buttonCircular_valores  zoomv valores_hover1"> </span>
+                                                  
+                                                    <div class="contvalores">
+                                                        <!--img  class="top"  src="assets/images/iconos/cumplimiento-blanco.png"-->
+                                                    </div>
+                                                    <p style="color: #e30613 !important;">CUMPLIMIENTO Y PUNTUALIDAD</p>
+                                            </div>
+                                        </div>
+                                        <!-- / Single Counter -->
+                                        <!-- Start Single Counter -->
+                                        <div class="col-sm-3">
+                                            <div class="mu-single-counter">
+												<span class="buttonCircular buttonCircular_valores zoomv valores_hover2"></span>
+                                                    <div class="contvalores"><!--img src="assets/images/iconos/compromiso-rojo.png"-->
+                                                        <!--img class="top"  src="assets/images/iconos/compromiso-blanco.png"-->
+                                                    </div>
+                                                    <p style="color: #e30613 !important;">SÓLIDO <br>COMPROMISO</p>
+                                            </div>
+                                        </div>
+                                        <!-- / Single Counter -->
+                                        <!-- Start Single Counter -->
+                                        <div class="col-sm-3">
+                                            <div class="mu-single-counter">
+                                                <span class="buttonCircular buttonCircular_valores zoomv valores_hover3"></span>
+                                                    <div class="contvalores"><!--img src="assets/images/iconos/puntualidad-rojo.png"-->
+                                                    <!--img class="top"  src="assets/images/iconos/puntualidad-blanco.png"-->
+                                                    </div>
+                                                    <p style="color: #e30613 !important;">ASESORAMIENTO PERSONALIZADO</p>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="mu-single-counter">
+                                               <span class="buttonCircular buttonCircular_valores zoomv valores_hover4"></span>
+                                                    <div class="contvalores"><!--img src="assets/images/iconos/calidad-rojo.png"-->
+                                                        <!--img class="top"  src="assets/images/iconos/calidad-blanco.png"-->
+                                                    </div>
+                                                    <p style="color: #e30613 !important;">CALIDAD <br>TOTAL</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="text-align: center; color:#e22319">
+               
+            <div style="text-align: center"><p>&nbsp;</p></div>
+                     <img src="assets/images/iconos/logo-peruoffset.png">
+                     
+                      <div style="text-align: center"><p>&nbsp;</p></div>
+            <div style="text-align: center"><p>&nbsp;</p></div>
+            </div>
+
+
+        </main>
+
+        <!-- End main content -->	
+
+        <!-- Social -->	
+
+
+
+        <!-- Start footer -->
+        <footer id="mu-footer" role="contentinfo">
+
+            <div class="container-fluid">
+
+
+                <div class="row" style="">
+
+                    <div style="/*position: relative; left: 10%;*/">
+                        <div class="">
+                            <div class="mu-testimonials-areax" >
+                                <div class="mu-testimonials-blockx" style="display: flex;align-items: center;justify-content: center;margin-top: 40px;">
+                                    <div class="col-sm-6 col-md-3" style="text-align:center !important;">
+                                         <span style="color: #ff1b20;text-align: center !important;font-weight: 700;">Síguenos en nuestras redes:
+											<a href="https://www.facebook.com/peruoffset.digital"><img src="assets/images/iconos/facebook-red.png" alt="" style="padding-left: 25px;"></a>
+											<a href="https://www.instagram.com/peruoffset_digital/"><img src="assets/images/iconos/instagram-red.png" alt="" style="padding-left: 25px;"></a>
+                                         
+                                        </span>
+                                    </div>
+                                    <div class="" style="text-align:center !important;">
+                                        <img src="assets/images/logo-peruoffset-footer.png" alt="">
+                                    </div>
+                                    <div class="col-sm-6 col-md-3" style="text-align:center !important;">
+                                        <span style="color: #ff1b20;text-align: center !important;font-weight: 700;">
+                                            <img src="assets/images/iconos/pin-red.png" alt="" style="padding-right: 20px;">
+                                         Calle Archipielago Mz. C Lt. 9, Lima - Perú. Teléfono: 332-1006</span>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center"><p>&nbsp;</p></div>
+            <div style="text-align: center"><p>&nbsp;</p></div>
+        </footer>
+        <!-- End footer -->
+
+
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Slick slider -->
+        <script type="text/javascript" src="assets/js/slick.min.js"></script>
+        <!-- Counter js -->
+        <script type="text/javascript" src="assets/js/counter.js"></script>
+        <!-- Filterable Gallery js -->
+        <script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
+        <!-- Gallery Lightbox -->
+        <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Ajax contact form  -->
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+        <!-- Custom js -->
+        <script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+
+
+    </body>
+
+<!-- Mirrored from peruoffset.pe/nosotros.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Sep 2023 15:57:16 GMT -->
+</html>
